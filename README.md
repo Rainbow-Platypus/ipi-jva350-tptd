@@ -189,4 +189,4 @@ fichier ne dépasse pas 1 MO.
 - BONUS : Créez une petite documentation statique en utilisant MkDocs.
 - Rédigez **ci-dessous** une courte analyse du rapport produit par Sonar (métriques, évolution, état général...) :
 
-Le rapport Sonar final indique...
+Le projet avait plusieurs bugs et code smells au depart, surtout dans Entreprise.java. J'ai corrige `bissextile()` qui utilisait des charAt au lieu de modulos (code smell), `estJourFerie()` qui retournait des mauvais resultats, et `getPremierJourAnneeDeConges()` qui utilisait getMonthValue() au lieu de getYear(). J'ai aussi ajoute des tests unitaires, parametres et d'integration, le coverage a bien augmente. Il reste des ameliorations possibles mais le build passe et les bugs critiques sont corriges.
